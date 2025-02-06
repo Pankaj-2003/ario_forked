@@ -1,6 +1,9 @@
 # %%writefile app.py
 
 import streamlit as st
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from crewai import Agent, Task, Crew, LLM
 from IPython.display import Markdown
 
