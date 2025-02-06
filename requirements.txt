@@ -4,5 +4,6 @@ langchain_groq
 crewai
 crewai[tools]
 groq
+pysqlite3-binary
 md2docx-python
 IPython
